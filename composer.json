@@ -1,0 +1,42 @@
+{
+    "name": "darkomalogajski/filament-realtime-notifications",
+    "description": "Real-time notifications for Filament admin panel using Laravel Reverb",
+    "keywords": ["filament", "laravel", "notifications", "real-time", "reverb", "websockets"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darko Malogajski",
+            "email": "darko.malogajski@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0|^11.0",
+        "filament/filament": "^3.0",
+        "pusher/pusher-php-server": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DarkoMalogajski\\FilamentRealtimeNotifications\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DarkoMalogajski\\FilamentRealtimeNotifications\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DarkoMalogajski\\FilamentRealtimeNotifications\\Providers\\FilamentRealtimeNotificationsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
